@@ -4,8 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather app</title>
+  <script src="https://kit.fontawesome.com/668d372fa7.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+  <div class="container main-container">
+    <div class="row">
+      <div class="input d-flex">
+        <input type="text" id="search-city">
+        <button id="search-button">Search<i class="fas fa-search"></i></button>
+      </div>
+      <div class= "information">
+        <h1 class="city m-2"></h1>
+
+        <p class="date-day"></p>
+        <img src="https://image.shutterstock.com/image-photo/cumulus-clouds-blue-sky-260nw-508513681.jpg" alt="">
+        <h5 class="temperature"></h5>
+        <span class="description"></span>
+        <div class="wind-humidity d-flex">
+          <div class="humidity d-flex flex-column w-50">
+            <span class="humidity-head">Humidity:</span>           
+            <span class='humidity-data'></span>
+          </div>
+          <div class="wind d-flex flex-column">
+            <span class="wind-head">Wind:</span>
+            <span class="wind-data"></span> 
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
