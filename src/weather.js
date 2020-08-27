@@ -29,7 +29,7 @@ async function getWeather() {
       const temperature = json.main.temp;
       temp.innerHTML = `Temperature: ${temperature}°F`;
       desc.innerHTML = `Desc: ${json.weather[0].description}`;
-      image.setAttribute('src', `http://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`);
+      image.setAttribute('src', `https://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`);
       humidity.innerHTML = `${json.main.humidity}%`;
       wind.innerHTML = `${json.wind.speed}mph`;
       toggleTemp(temperature);
