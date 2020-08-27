@@ -2,10 +2,7 @@
 The Weather App project comes at the end of the Asynchronous Javascript and APIs section of the Javascript course. It tests the knowledge of the student about asynchronous communication with promises or async/await and when to use them. The project requirements are found [here](https://www.theodinproject.com/courses/javascript/lessons/weather-app) in the Odin Project.
 
 ## Web App Screenshots
-![](./images/)
-
-
-![](./images/)
+![](./images/app.png)
 
 ## Built With
 
@@ -16,7 +13,7 @@ The Weather App project comes at the end of the Asynchronous Javascript and APIs
 
 ## Live Demo
 
-Click [here](https://raw.githack.com/Phylis05/restaurant-page-JS/restaurant-page/dist/index.html) to visit a live version of the web app.
+Click [here]() to visit a live version of the web app.
 
 ## Getting Started
 
