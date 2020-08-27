@@ -20,7 +20,7 @@ import toggleTemp from './convertTemp';
 
 
 async function getWeather() {
-  const path = `http://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&APPID=2aaafb6d40ea0f22988d1512e3546a89&units=imperial`;
+  const path = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&APPID=2aaafb6d40ea0f22988d1512e3546a89&units=imperial`;
   const res = await fetch(path, { mode: 'cors' });
   const json = await res.json()
 
