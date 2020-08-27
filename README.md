@@ -13,7 +13,7 @@ The Weather App project comes at the end of the Asynchronous Javascript and APIs
 
 ## Live Demo
 
-Click [here]() to visit a live version of the web app.
+Click [here](https://rawcdn.githack.com/Phylis05/weather-app-JS/2d9248d884310d6aad292303c06b2fcd7c698440/dist/index.html) to visit a live version of the web app.
 
 ## Getting Started
 
