@@ -18,8 +18,8 @@ import 'bootstrap';
 
 import toggleTemp from './convertTemp';
 
+
 async function getWeather() {
-  // document.querySelector('').classList.remove('hide');
   const path = `http://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&APPID=2aaafb6d40ea0f22988d1512e3546a89&units=imperial`;
   const res = await fetch(path, { mode: 'cors' });
   const json = await res.json()
@@ -28,7 +28,7 @@ async function getWeather() {
       cityState.innerHTML = `${json.name}, ${json.sys.country}`;
       const temperature = json.main.temp;
       temp.innerHTML = `Temperature: ${temperature}°F`;
-      desc.innerHTML = json.weather[0].description;
+      desc.innerHTML = `Desc: ${json.weather[0].description}`;
       image.setAttribute('src', `http://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`);
       humidity.innerHTML = `${json.main.humidity}%`;
       wind.innerHTML = `${json.wind.speed}mph`;
@@ -44,6 +44,8 @@ async function getWeather() {
       const weekDay = days[dateNow.getDay()];
       const formattedTime = `${weekDay} ${dateToday}, ${month}, ${year}`;
       date.innerHTML = formattedTime;
+
+      document.querySelector('.information').classList.remove('hide');
     }).catch((err) => {
       // eslint-disable-next-line no-console
       console.log(err.message);
