@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable import/no-cycle */
 import {
   searchCity,
@@ -26,7 +27,7 @@ async function getWeather() {
     .then((json) => {
       cityState.innerHTML = `${json.name}, ${json.sys.country}`;
       const temperature = json.main.temp;
-      temp.innerHTML = `Temperature:${temperature}`;
+      temp.innerHTML = `Temperature: ${temperature}°F`;
       desc.innerHTML = json.weather[0].description;
       image.setAttribute('src', `http://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`);
       humidity.innerHTML = `${json.main.humidity}%`;
@@ -44,6 +45,7 @@ async function getWeather() {
       const formattedTime = `${weekDay} ${dateToday}, ${month}, ${year}`;
       date.innerHTML = formattedTime;
     }).catch((err) => {
+      // eslint-disable-next-line no-console
       console.log(err.message);
     });
 }

@@ -1,9 +1,6 @@
-*{
+* {
   padding: 0;
   margin: 0;
-}
-body {
-  
 }
 
 .container {
@@ -13,14 +10,14 @@ body {
 }
 
 .row {
+  width: 50%;
   margin: 3em auto;
-  width: 35%;
   box-shadow: black;
   border-radius: 5px;
 }
 
 .input {
-  width: 100%;
+  width: 90%;
 }
 
 .input input {
@@ -28,21 +25,21 @@ body {
   padding: 0.7em;
   border-radius: 3px;
 }
+
 .input button {
   padding: 0.7em;
 }
 
 .fa-search {
- margin-left: 2px;
+  margin-left: 2px;
 }
+
 .information {
-  width: 100%;
-  background-color: #2FF6D0;
+  width: 65%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #2ff6d0;
   border: 1px solid #a9a9a9;
   border-radius: 5px;
   box-shadow: 4px 4px 10px 2px grey;
 }
-
-/* .hide {
-  display: none;
-} */

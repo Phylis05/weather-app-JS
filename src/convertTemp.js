@@ -8,10 +8,10 @@ const toggleTemp = (f) => {
     const celsiusToFar = (farToCelsius * (9 / 5)) + 32;
 
     if (!value) {
-      temp.innerHTML = `Temperature: ${celsiusToFar.toFixed(2)}`;
+      temp.innerHTML = `Temperature: ${celsiusToFar.toFixed(2)}°F`;
       value = !value;
     } else {
-      temp.innerHTML = `Temperature: ${farToCelsius.toFixed(2)}`;
+      temp.innerHTML = `Temperature: ${farToCelsius.toFixed(2)}°C `;
       value = !value;
     }
   });
