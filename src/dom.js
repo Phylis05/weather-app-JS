@@ -1,7 +1,8 @@
 /* eslint-disable import/no-cycle */
 import getWeather from './weather';
 
-const searchCity = document.getElementById('search-city');
+const form = document.querySelector('.form');
+const searchCity = document.querySelector('#search-city');
 const searchButton = document.getElementById('search-button');
 const cityState = document.querySelector('.city');
 const date = document.querySelector('.date-day');
@@ -30,4 +31,5 @@ export {
   wind,
   toggleButton,
   searchListener,
+  form,
 };

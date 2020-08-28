@@ -11,13 +11,14 @@ import {
   humidity,
   wind,
   searchListener,
+  form,
 } from './dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
-
 import toggleTemp from './convertTemp';
 
+searchCity.value = 'Amsterdam';
 
 async function getWeather() {
   const path = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&APPID=2aaafb6d40ea0f22988d1512e3546a89&units=imperial`;
@@ -44,12 +45,11 @@ async function getWeather() {
       const weekDay = days[dateNow.getDay()];
       const formattedTime = `${weekDay} ${dateToday}, ${month}, ${year}`;
       date.innerHTML = formattedTime;
-
-      document.querySelector('.information').classList.remove('hide');
     }).catch((err) => {
       // eslint-disable-next-line no-console
       console.log(err.message);
     });
+  form.reset();
 }
 
 searchListener(searchButton);
